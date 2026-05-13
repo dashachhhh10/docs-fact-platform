@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Документы — Факт</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- CSV parser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+  <!-- ML / TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <!-- ─── App Shell ─────────────────────────────────────── -->
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="sidebar-logo-icon">
+          <i data-lucide="git-compare-arrows"></i>
+        </span>
+        <span class="sidebar-logo-text">Docs<span class="accent">·</span>Fact</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-item" data-route="dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Дашборд</span>
+        </a>
+        <a href="#trips" class="nav-item" data-route="trips">
+          <i data-lucide="truck"></i>
+          <span>Рейсы</span>
+        </a>
+        <a href="#issues" class="nav-item" data-route="issues">
+          <i data-lucide="triangle-alert"></i>
+          <span>Расхождения</span>
+          <span class="nav-badge" id="nav-issues-count"></span>
+        </a>
+        <a href="#upload" class="nav-item" data-route="upload">
+          <i data-lucide="upload-cloud"></i>
+          <span>Загрузка данных</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-user-avatar">Л</div>
+          <div class="sidebar-user-info">
+            <span class="sidebar-user-name">Логист</span>
+            <span class="sidebar-user-role">Диспетчер</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Main column -->
+    <div class="main-column">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <button class="btn-icon sidebar-toggle" id="sidebar-toggle" aria-label="Меню">
+            <i data-lucide="menu"></i>
+          </button>
+          <nav class="breadcrumb" id="breadcrumb" aria-label="Навигация">
+            <!-- injected by router -->
+          </nav>
+        </div>
+
+        <div class="header-right">
+          <button class="btn-icon theme-toggle" id="theme-toggle" aria-label="Сменить тему">
+            <i data-lucide="sun" class="icon-light"></i>
+            <i data-lucide="moon" class="icon-dark"></i>
+          </button>
+          <button class="btn-icon" aria-label="Уведомления">
+            <i data-lucide="bell"></i>
+          </button>
+          <div class="header-avatar" aria-label="Профиль">Л</div>
+        </div>
+      </header>
+
+      <!-- Page content -->
+      <main class="page-content" id="page-content">
+        <!-- injected by router -->
+      </main>
+
+    </div><!-- /main-column -->
+
+  </div><!-- /app-shell -->
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts (order matters) -->
+  <script type="module" src="js/data.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+proof_id,trip_id,stage,driver_id,timestamp,proof_type,note
+PRF-0001,TP-001,loading,DRV-IVA-77,2026-05-10T08:35:00,photo,Погрузка завершена, груз упакован
+PRF-0002,TP-002,loading,DRV-PET-77,2026-05-11T08:10:00,photo,Погрузка ОК
+PRF-0003,TP-002,unloading,DRV-PET-77,2026-05-11T23:30:00,signature,Принято получателем
+PRF-0004,TP-003,loading,DRV-SID-52,2026-05-11T06:30:00,photo,
+PRF-0005,TP-003,unloading,DRV-SID-52,2026-05-11T13:45:00,photo,Доставлено, претензий нет
+PRF-0006,TP-003,unloading,DRV-SID-52,2026-05-11T13:50:00,signature,Подпись получателя
+PRF-0007,TP-005,loading,DRV-ALK-54,2026-05-12T08:45:00,photo,
+PRF-0008,TP-006,loading,DRV-MOR-61,2026-05-12T10:30:00,photo,
+PRF-0009,TP-006,unloading,DRV-MOR-61,2026-05-12T15:05:00,photo,
+PRF-0010,TP-006,unloading,DRV-MOR-61,2026-05-12T15:08:00,signature,
+PRF-0011,TP-007,loading,DRV-VAS-36,2026-05-12T08:00:00,photo,Погрузка частичная — недостача 2 места
+PRF-0012,TP-008,loading,DRV-NIK-63,2026-05-12T11:30:00,photo,
+PRF-0013,TP-008,unloading,DRV-NIK-63,2026-05-12T13:55:00,photo,Доставлено
+PRF-0014,TP-008,unloading,DRV-NIK-63,2026-05-12T13:58:00,signature,
+PRF-0015,TP-011,loading,DRV-KUZ-78,2026-05-13T08:20:00,photo,
+PRF-0016,TP-011,unloading,DRV-KUZ-78,2026-05-13T11:55:00,photo,
+PRF-0017,TP-011,unloading,DRV-KUZ-78,2026-05-13T11:58:00,signature,
+PRF-0018,TP-012,loading,DRV-MIH-77,2026-05-13T07:50:00,photo,

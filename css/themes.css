@@ -1,0 +1,75 @@
+/* ─── Dark Theme (default) ───────────────────────────── */
+[data-theme="dark"] {
+  --bg-base:     #09090b;
+  --bg-surface:  #111113;
+  --bg-elevated: #18181b;
+  --bg-hover:    #1f1f23;
+
+  --border:       #27272a;
+  --border-strong:#3f3f46;
+
+  --text-primary:   #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted:     #52525b;
+
+  --accent:        #6366f1;
+  --accent-hover:  #4f46e5;
+  --accent-subtle: rgba(99,102,241,.12);
+  --accent-border: rgba(99,102,241,.3);
+
+  --status-ok:          #22c55e;
+  --status-ok-subtle:   rgba(34,197,94,.12);
+  --status-warn:        #f59e0b;
+  --status-warn-subtle: rgba(245,158,11,.12);
+  --status-crit:        #ef4444;
+  --status-crit-subtle: rgba(239,68,68,.12);
+  --status-info:        #3b82f6;
+  --status-info-subtle: rgba(59,130,246,.12);
+  --status-neutral:     #52525b;
+  --status-neutral-subtle: rgba(82,82,91,.15);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.25);
+  --shadow:    0 4px 12px rgba(0,0,0,.3);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,.4);
+
+  --chart-grid:  rgba(255,255,255,.06);
+  --chart-label: #71717a;
+}
+
+/* ─── Light Theme ────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-base:     #f4f4f5;
+  --bg-surface:  #ffffff;
+  --bg-elevated: #f4f4f5;
+  --bg-hover:    #e4e4e7;
+
+  --border:       #e4e4e7;
+  --border-strong:#d4d4d8;
+
+  --text-primary:   #09090b;
+  --text-secondary: #71717a;
+  --text-muted:     #a1a1aa;
+
+  --accent:        #6366f1;
+  --accent-hover:  #4f46e5;
+  --accent-subtle: rgba(99,102,241,.08);
+  --accent-border: rgba(99,102,241,.25);
+
+  --status-ok:          #16a34a;
+  --status-ok-subtle:   rgba(22,163,74,.1);
+  --status-warn:        #d97706;
+  --status-warn-subtle: rgba(217,119,6,.1);
+  --status-crit:        #dc2626;
+  --status-crit-subtle: rgba(220,38,38,.1);
+  --status-info:        #2563eb;
+  --status-info-subtle: rgba(37,99,235,.1);
+  --status-neutral:     #71717a;
+  --status-neutral-subtle: rgba(113,113,122,.1);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow:    0 4px 12px rgba(0,0,0,.1);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,.15);
+
+  --chart-grid:  rgba(0,0,0,.06);
+  --chart-label: #a1a1aa;
+}

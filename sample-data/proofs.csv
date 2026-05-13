@@ -1,0 +1,6 @@
+proof_id,trip_id,stage,driver_id,timestamp,proof_type,note
+PRF-001,ТР-002,loading,DRV-002,2026-05-11T08:05:00,photo,Загрузка завершена
+PRF-002,ТР-002,unloading,DRV-002,2026-05-11T23:40:00,photo,Разгрузка завершена
+PRF-003,ТР-003,loading,DRV-003,2026-05-11T07:00:00,signature,Груз принят
+PRF-004,ТР-003,unloading,DRV-003,2026-05-11T13:30:00,signature,Груз сдан
+PRF-005,ТР-005,loading,DRV-005,2026-05-12T09:00:00,photo,Загрузка ok
