@@ -19,28 +19,20 @@
 
 ## Структура проекта
 
-docs-fact-platform/
-├── index.html
-├── css/
-│   ├── base.css
-│   ├── themes.css
-│   └── components.css
-├── js/
-│   ├── app.js
-│   ├── router.js
-│   ├── data.js
-│   ├── csv-parser.js
-│   ├── matching-engine.js
-│   ├── priority-engine.js
-│   ├── ml-classifier.js
-│   └── render-*.js
-├── test-data/
-│   ├── trips.csv
-│   ├── documents.csv
-│   ├── gps_events.csv
-│   └── proofs.csv
-├── vercel.json
-└── README.md
+- `index.html` — точка входа SPA
+- `css/base.css` — переменные, типографика, layout
+- `css/themes.css` — тёмная и светлая темы
+- `css/components.css` — переиспользуемые компоненты
+- `js/app.js` — инициализация приложения
+- `js/router.js` — hash-роутинг между экранами
+- `js/data.js` — модель данных и работа с localStorage
+- `js/csv-parser.js` — парсинг CSV-файлов
+- `js/matching-engine.js` — движок сверки по матрице правил
+- `js/priority-engine.js` — rule-based приоритизация
+- `js/ml-classifier.js` — нейросетевой классификатор приоритетов
+- `js/render-dashboard.js`, `render-trips.js`, `render-issues.js`, `render-upload.js` — рендеринг экранов
+- `test-data/` — тестовый набор CSV-файлов
+- `vercel.json` — конфигурация деплоя
 
 ## Тестовые данные
 
@@ -68,4 +60,4 @@ docs-fact-platform/
 
 ## Автор
 
-Чикунова Дарья Александровна. Выпускная квалификационная работа, «Бизнес-информатика». РЭУ им. Г.В. Плеханова, 2026.
+Чикунова Дарья Александровна. Выпускная квалификационная работа,«Бизнес-информатика». РЭУ им. Г.В. Плеханова, 2026.
